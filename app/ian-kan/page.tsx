@@ -1,4 +1,5 @@
 import WButton from "@/components/washington/WButton";
+import Link from "next/link";
 import WActionList from "@/components/washington/WActionList";
 import WPane from "@/components/washington/WPane";
 import WCircularButton from "@/components/washington/WCircularButton";
@@ -10,6 +11,11 @@ export default function IanKanShowcasePage() {
   return (
     <div className="min-h-screen px-6 py-10 space-y-12">
       <header className="space-y-4">
+        <div>
+          <Link href="/">
+            <WButton style="outlined" size="sm" leftIcon={ArrowLeft} content="Back" />
+          </Link>
+        </div>
         <h1 className="text-3xl font-semibold">Ian Kan Contributions Showcase</h1>
         <p className="text-muted-foreground max-w-3xl">
           Welcome to the intern showcase for Ian, one of our 2025 interns! This page demonstrates the 6 components that Ian made for the Washington component set and the routing contributions he made to the backend.
